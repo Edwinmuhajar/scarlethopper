@@ -1,0 +1,24 @@
+# ===== ScarletHopper =====
+
+# Jumlah item yang dipindahkan hopper dalam 1x transfer (vanilla = 1).
+# Bisa diubah lewat file ini atau in-game: /scarlethopper set <jumlah>
+# Batas: 1 - 4096
+transfer-amount: 32
+
+# false = 1x transfer hanya memindahkan 1 jenis item (sejenis, sampai jumlah di atas)
+# true  = 1x transfer boleh memindahkan campuran semua jenis item sampai jumlah di atas
+mixed-items: false
+
+# Jenis inventory yang didukung (sumber DAN tujuan harus ada di daftar ini).
+# HOPPER selalu aktif. Furnace/brewing stand sengaja tidak dimasukkan
+# supaya mekanik slot bawaannya tidak rusak.
+inventory-types:
+  - CHEST
+  - BARREL
+  - HOPPER
+  - SHULKER_BOX
+  - DISPENSER
+  - DROPPER
+
+# Nama world yang dinonaktifkan (hopper di sana tetap vanilla).
+disabled-worlds: []
